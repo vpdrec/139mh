@@ -79,7 +79,12 @@ a:hover {
 .pointer {
     cursor: pointer;
 }
-
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
 // 文字大小
 .fs-12 {
     font-size: 0.6rem !important;
