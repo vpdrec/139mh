@@ -39,6 +39,9 @@ a:hover {
 .zi-1 {
     z-index: 1;
 }
+.zi-2 {
+    z-index: 2;
+}
 .word-wrap {
     word-wrap: break-word;
     word-break: break-all;
@@ -100,6 +103,10 @@ a:hover {
 
 .fs-18 {
     font-size: 0.9rem !important;
+}
+
+.fs-24 {
+    font-size: 1.2rem !important;
 }
 
 // 补丁

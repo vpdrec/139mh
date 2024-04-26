@@ -1,1 +1,0 @@
-import{h as e}from"./moment.WSJ9un1t.js";const o={strCut:(r,t)=>r.length<t?r:r.substring(0,t)+"...",timeFmt:(r,t="YYYY-MM-DD HH:mm:ss")=>r?e.unix(r).format(t):"",numFmt:r=>{if(r<1e3)return r;if(r<1e4)return`${(r/1e3).toFixed(2)}K`;if(r>=1e4)return`${(r/1e4).toFixed(2)}W`}};export{o as $};
