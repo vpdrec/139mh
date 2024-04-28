@@ -1,348 +1,358 @@
 html {
-    padding: 0;
-    margin: 0;
-    font-size: 22px;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
 }
 
 body {
-    font-size: 0.7rem;
-    padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
 .container-full {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 1130px;
-    }
+  .container {
+    width: 1130px;
+  }
 }
 
 a {
-    color: #222;
-    text-decoration: none;
-    font-size: 0.7rem;
+  color: #222;
+  text-decoration: none;
+  font-size: 0.7rem;
 }
 
 a:hover {
-    color: #ff7300;
+  color: #ff7300;
 }
 
 // 其他
 .zi-1 {
-    z-index: 1;
+  z-index: 1;
 }
 .zi-2 {
-    z-index: 2;
+  z-index: 2;
 }
 .word-wrap {
-    word-wrap: break-word;
-    word-break: break-all;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .border-box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .fw-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .header-mt-def {
-    margin-top: 96px;
+  margin-top: 96px;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .w-50 {
-    width: 50%;
+  width: 50%;
 }
 
 .txt-sigle {
+  height: 1;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+// 文字大小
+.fs-12 {
+  font-size: 0.6rem !important;
+}
+
+.fs-14 {
+  font-size: 0.7rem !important;
+}
+
+.fs-16 {
+  font-size: 0.8rem !important;
+}
+
+.fs-18 {
+  font-size: 0.9rem !important;
+}
+
+.fs-20 {
+  font-size: 1rem !important;
+}
+
+.fs-24 {
+  font-size: 1.2rem !important;
+}
+
+// 补丁
+.p-10 {
+  padding: 10px !important;
+}
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mx-10 {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+// 颜色
+.bg-dark {
+  background-color: $dark-color;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.color-yellow {
+  color: $yellow-color;
+}
+
+.color-grey {
+  color: #888888;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-orange {
+  color: #ff7300;
+}
+
+// flex
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-out {
+  flex: 1 0 auto;
+}
+
+.flex-in {
+  flex: 0 1 auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+// 边框
+.bb {
+  border-bottom: 1px solid $bb-color;
+}
+
+// 表格
+.tb-filed {
+  border-collapse: collapse;
+  tr {
+    border-bottom: 1px solid $bb-color;
+  }
+  th {
+    padding: 4px 0;
+    color: #888888;
+    text-align: right;
+  }
+  td {
+    padding: 4px 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: left;
+  }
+}
+
+// 登录
+.login_form {
+  width: 90%;
+  border: 1px solid $bb-color;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0 15px 15px 15px;
+  background-color: #fff;
+}
+
+@media (min-width: 800px) {
+  .login_form {
+    width: 500px;
+  }
+  html {
+    font-size: 20px;
+  }
+}
+
+.comic-item {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .cover {
+    width: 88%;
+    padding-top: 125%;
+    position: relative;
+
+    img {
+      border-radius: 8px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .txt {
+    width: 88%;
     height: 1;
     line-height: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.pointer {
-    cursor: pointer;
-}
-.relative {
-    position: relative;
-}
-.absolute {
-    position: absolute;
-}
-// 文字大小
-.fs-12 {
-    font-size: 0.6rem !important;
-}
-
-.fs-14 {
-    font-size: 0.7rem !important;
-}
-
-.fs-16 {
-    font-size: 0.8rem !important;
-}
-
-.fs-18 {
-    font-size: 0.9rem !important;
-}
-
-.fs-24 {
-    font-size: 1.2rem !important;
-}
-
-// 补丁
-.p-10 {
-    padding: 10px !important;
-}
-
-.py-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.py-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.pb-5 {
-    padding-bottom: 5px;
-}
-
-.pb-10 {
-    padding-bottom: 10px;
-}
-
-.px-10 {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.pr-10 {
-    padding-right: 10px;
-}
-.pt-10 {
-    padding-top: 10px;
-}
-
-.mr-5 {
-    margin-right: 5px;
-}
-
-.mt-10 {
-    margin-top: 10px;
-}
-
-.mt-5 {
-    margin-top: 5px;
-}
-
-.mt-15 {
-    margin-top: 15px;
-}
-
-.mt-20 {
-    margin-top: 20px;
-}
-
-.mr-10 {
-    margin-right: 10px;
-}
-
-.ml-5 {
-    margin-left: 5px;
-}
-
-.ml-10 {
-    margin-left: 10px;
-}
-
-.ml-20 {
-    margin-left: 20px;
-}
-
-.mx-10 {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.mb-5 {
-    margin-bottom: 5px;
-}
-
-.mb-10 {
-    margin-bottom: 10px;
-}
-
-// 颜色
-.bg-dark {
-    background-color: $dark-color;
-}
-
-.bg-white {
-    background-color: #fff;
-}
-
-.color-yellow {
-    color: $yellow-color;
-}
-
-.color-grey {
-    color: #888888;
-}
-
-.color-white {
-    color: #fff;
-}
-
-.color-orange {
-    color: #ff7300;
-}
-
-// flex
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-out {
-    flex: 1 0 auto;
-}
-
-.flex-in {
-    flex: 0 1 auto;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-grow-0 {
-    flex-grow: 0;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-between {
-    justify-content: space-between;
-}
-
-.justify-content-around {
-    justify-content: space-around;
-}
-
-.justify-content-end {
-    justify-content: flex-end;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-// 边框
-.bb {
-    border-bottom: 1px solid $bb-color;
-}
-
-// 表格
-.tb-filed {
-    border-collapse: collapse;
-    tr {
-        border-bottom: 1px solid $bb-color;
-    }
-    th {
-        padding: 4px 0;
-        color: #888888;
-        text-align: right;
-    }
-    td {
-        padding: 4px 10px;
-        word-wrap: break-word;
-        word-break: break-all;
-        text-align: left;
-    }
-}
-
-// 登录
-.login_form {
-    width: 90%;
-    border: 1px solid $bb-color;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding: 0 15px 15px 15px;
-    background-color: #fff;
-}
-
-@media (min-width: 800px) {
-    .login_form {
-        width: 500px;
-    }
-    html {
-        font-size: 20px;
-    }
-}
-
-.comic-item {
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-
-    .cover {
-        width: 88%;
-        padding-top: 125%;
-        position: relative;
-
-        img {
-            border-radius: 8px;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-
-    .txt {
-        width: 88%;
-        height: 1;
-        line-height: 1;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+  }
 }
 
 @media (min-width: 768px) {
-    .comic-item {
-        width: 16.66%;
-    }
+  .comic-item {
+    width: 16.66%;
+  }
 }
